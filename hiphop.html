@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioAura</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <a href="player.html"> 
+            <img src="logo.png" width="40" alt="logo" class="music-symbol">
+        </a>
+            <h4>AUDIOAURA</h4>
+            <a href="player.html"> 
+                <img src="back.png" alt="Go Back" class="back-icon">
+            </a>
+            
+        </div>
+    </header>
+    <h1>Hip Hop Playlist</h1>
+    <div class="player-container">
+        
+        <div id="auth-container" class="auth-buttons">
+           
+            <button id="loginButton" class="invert" onclick="window.location.href='indx.html'">Login</button>
+            <span id="usernameDisplay" class="username-display"></span> 
+    
+        </div>
+        <div class="music-player">
+            <audio id="audio-player" class="invert"controls>
+                <source id="audio-source" src="song1.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <div class="navigation-buttons">
+              <button onclick="playPrevious()" class="invert"><img src="prevsong.svg" alt="prev"></button>
+              <button onclick="playNext()" class="invert"><img src="nextsong.svg" alt="next"></button>
+              </div>
+        </div>
+        <h2>Songs:</h2><br>
+        <div class="song-list">
+            <button onclick="playSong('Sky.mp3')" class="invert">
+                <img src="play.svg" alt="play"> Sky full of Stars
+            </button>
+            <button onclick="playSong('sunflower.mp3')" class="invert">
+                <img src="play.svg" alt="play"> Sunflower
+            </button>
+            <button onclick="playSong('old.mp3')" class="invert">
+                <img src="play.svg" alt="play"> Old Town Road
+            </button>
+            <button onclick="playSong('light.mp3')" class="invert">
+                <img src="play.svg" alt="play"> Blinding Lights
+            </button>
+            <button onclick="playSong('Used To Love.mp3')" class="invert">
+                <img src="play.svg" alt="play"> Used to Love
+            </button>
+        </div>
+        <br>
+        <div  id="history">
+            <h2>Song History</h2>
+            <ul id="history-list">
+                
+            </ul>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+   
